@@ -1,0 +1,215 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: Helvetica;
+  font-weight: 100;
+  margin: 0;
+  background-color: #131426; }
+
+.projects {
+  font-weight: 100;
+  color: #203880; }
+
+.intro-div {
+  padding-top: 200px; }
+
+.intro-text {
+  text-align: center;
+  font-weight: 300;
+  font-family: Helvetica;
+  color: #f2c230;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #131426; }
+
+.down-arrow {
+  text-align: center; }
+
+.down-arrow-icon {
+  color: #ccc;
+  position: relative;
+  top: 300px; }
+  .down-arrow-icon a {
+    color: #f2c230;
+    text-shadow: 1px 1px #131426; }
+
+.splash {
+  height: 756px; }
+
+.intro {
+  height: 100%;
+  background-image: url(../img/cuban_car.jpg);
+  background-size: cover; }
+
+.work {
+  background-color: #fff; }
+
+.header {
+  display: table; }
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: middle;
+  border-bottom: 5px solid #ccc; }
+
+.nav-brand {
+  float: right; }
+  .nav-brand .name {
+    color: #ccc;
+    font-family: Helvetica;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+    position: relative;
+    bottom: 10px; }
+
+.nav-list {
+  padding-left: 0; }
+
+.nav-link {
+  float: left;
+  display: inline;
+  width: 40px; }
+  .nav-link a {
+    color: #ccc; }
+
+.wrapper {
+  padding-top: 100px; }
+
+.work {
+  padding-top: 300px; }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto; } }
+@media screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+    margin-right: auto;
+    margin-left: auto; } }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto; } }
+
+@media screen and (min-width: 1200px) {
+  .box {
+    width: 1170px;
+    height: 1170px;
+    margin-right: auto;
+    margin-left: auto; } }
+@media screen and (min-width: 992px) {
+  .box {
+    width: 970px;
+    height: 970px;
+    margin-right: auto;
+    margin-left: auto; } }
+@media screen and (min-width: 768px) {
+  .box {
+    width: 750px;
+    height: 750px;
+    margin-right: auto;
+    margin-left: auto; } }
+
+.sq {
+  height: 12.5%; }
+
+.bsq {
+  height: 25%; }
+
+.lb {
+  background-color: #3078c0;
+  -webkit-transition: background-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, transform 1s; }
+
+.mb {
+  background-color: #203880;
+  -webkit-transition: background-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, transform 1s; }
+
+.teal {
+  background-color: #2fbfbf;
+  -webkit-transition: background-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, transform 1s; }
+
+.navy {
+  background-color: #182045;
+  -webkit-transition: background-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, transform 1s; }
+
+.clock-icon {
+  position: relative;
+  left: 75%;
+  top: 25%;
+  color: #fff; }
+
+.red {
+  background-color: #b31b28;
+  -webkit-transition: background-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, transform 1s; }
+
+.white {
+  background-color: #fff;
+  -webkit-transition: background-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, transform 1s; }
+
+.rocket-icon {
+  position: relative;
+  top: 50%;
+  left: 55%;
+  color: #fff; }
+
+.e-icon, .l-1-icon, .o-icon {
+  color: #203880;
+  font-size: 60px;
+  position: relative;
+  top: -25px;
+  left: 25px; }
+
+.orange {
+  background-color: #e74c2e;
+  -webkit-transition: background-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, transform 1s; }
+
+
+.o-icon {
+  color: #3078c0;
+  top: -30px;
+  left: 28px; }
+
+.yellow {
+  background-color: #f2c230;
+  -webkit-transition: background-color 1s, -webkit-transform 1s;
+  transition: background-color 1s, transform 1s; }
+
+.h-icon, .l-2-icon {
+  color: #fff;
+  font-size: 80px;
+  position: relative;
+  left: 67%; }
+
+.l-2-icon {
+  color: #8b3623; }
+
+.brown {
+  background-color: #8b3623; }
+
+.green {
+  background-color: #256f6e; }
+
+.grey {
+  background-color: #ccc; }
+
+.purple {
+  background-color: #131426; }

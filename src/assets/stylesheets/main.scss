@@ -1,0 +1,288 @@
+$break-lg: 1200px;
+$break-md: 992px;
+$break-sm: 768px;
+$teal: #2fbfbf;
+$navy: #182045;
+$l-blue: #3078c0;
+$m-blue: #203880;
+$red: #b31b28;
+$white: #fff;
+$orange: #e74c2e;
+$yellow: #f2c230;
+$brown: #8b3623;
+$green: #256f6e;
+$purple: #131426;
+$grey: #ccc;
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  font-weight: 100;
+  margin: 0;
+  background-color: $purple;
+}
+
+.projects {
+  font-weight: 100;
+  color: $m-blue;
+}
+
+// .intro-picture {
+//   height: 250px;
+//   width: 250px;
+//   border-radius: 50%;
+//   background-color: $m-blue;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+.intro-div {
+  padding-top: 200px;
+}
+
+.intro-text {
+  text-align: center;
+  font-weight: 300;
+  font-family: Helvetica;
+  color: $yellow;
+  text-transform: uppercase;
+  text-shadow: 1px 1px $purple;
+}
+
+.down-arrow {
+  text-align: center;
+}
+
+.down-arrow-icon {
+  color: $grey;
+  position: relative;
+  top: 300px;
+  a {
+    color: $yellow;
+    text-shadow: 1px 1px $purple;
+  }
+}
+
+.splash {
+  height: 756px;
+}
+
+.intro {
+  height: 100%;
+  background-image: url(../img/cuban_car.jpg);
+  background-size: cover;
+}
+
+.work {
+  background-color: $white;
+}
+
+.header {
+  display: table;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: $white;
+  z-index: 1;
+  display: table-cell;
+  vertical-align: middle;
+  border-bottom: 5px solid $grey;
+}
+
+.nav-brand {
+  float: right;
+  .name {
+    color: $grey;
+    font-family: Helvetica;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+.nav-list {
+  padding-left: 0;
+}
+
+.nav-link {
+  float: left;
+  display: inline;
+  width: 40px;
+  a {
+    color: #ccc;
+  }
+}
+
+.wrapper {
+  padding-top: 100px;
+}
+
+.work {
+  padding-top: 300px;
+}
+
+.container {
+  @media screen and (min-width: $break-lg) {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $break-md){
+    width: 970px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $break-sm) {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.box {
+  @media screen and (min-width: $break-lg) {
+    width: 1170px;
+    height: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $break-md){
+    width: 970px;
+    height: 970px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $break-sm) {
+    width: 750px;
+    height: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.sq {
+  height: 12.5%;
+}
+
+.bsq {
+  height: 25%;
+}
+
+
+
+@mixin background-color-transition($background-color, $transform) {
+  -webkit-transition: background-color $background-color, -webkit-transform $transform;
+  transition: background-color $background-color, transform $transform;
+}
+
+.lb {
+  background-color: $l-blue;
+  @include background-color-transition(1s, 1s);
+}
+
+.mb {
+  background-color: $m-blue;
+  @include background-color-transition(1s, 1s);
+}
+
+.teal {
+  background-color: $teal;
+  @include background-color-transition(1s, 1s);
+}
+
+.navy {
+  background-color: $navy;
+  @include background-color-transition(1s, 1s);
+}
+
+.clock-icon {
+  position: relative;
+  left: 75%;
+  top: 25%;
+  color: #fff;
+}
+
+.red {
+  background-color: $red;
+  @include background-color-transition(1s, 1s);
+}
+
+.white {
+  background-color: $white;
+  @include background-color-transition(1s, 1s);
+}
+
+.rocket-icon {
+  position: relative;
+  top: 50%;
+  left: 55%;
+  color: #fff;
+}
+
+.e-icon {
+  color: $m-blue;
+  font-size: 60px;
+  position: relative;
+  top: -25px;
+  left: 25px;
+}
+
+.orange {
+  background-color: $orange;
+  @include background-color-transition(1s, 1s);
+}
+
+.l-1-icon {
+  @extend .e-icon;
+}
+
+.o-icon {
+  @extend .e-icon;
+  color: $l-blue;
+  top: -30px;
+  left: 28px;
+}
+
+.yellow {
+  background-color: $yellow;
+  @include background-color-transition(1s, 1s);
+}
+
+.h-icon {
+  color: $white;
+  font-size: 80px;
+  position: relative;
+  left: 67%;
+}
+
+.l-2-icon {
+  @extend .h-icon;
+  color: $brown;
+}
+
+.brown {
+  background-color: $brown;
+}
+
+.green {
+  background-color: $green;
+}
+
+.grey {
+  background-color: $grey;
+}
+
+.purple {
+  background-color: $purple;
+}
