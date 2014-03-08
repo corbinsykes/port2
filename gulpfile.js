@@ -20,7 +20,7 @@ gulp.task('scripts', function() {
 
 gulp.task('styles', function() {
   gulp.src('src/assets/stylesheets/*')
-    .pipe(sass())
+    .pipe(sass({errLogToConsole: true}))
     .pipe(gulp.dest('build/css'));
 });
 
@@ -37,12 +37,12 @@ gulp.task('default', ['index', 'scripts', 'styles', 'images'], function() {
     gulp.run('index');
   });
 
-  gulp.watch('src/assets/js/*.js', function() {
-    gulp.run('scripts');
-  });
-
   gulp.watch('src/assets/stylesheets/*.scss', function() {
     gulp.run('styles');
+  });
+
+  gulp.watch('src/assets/js/*.js', function() {
+    gulp.run('scripts');
   });
 
   gulp.watch('src/assets/images', function() {

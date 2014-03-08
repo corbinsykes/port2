@@ -39,4 +39,47 @@ $(document).ready(function() {
   },function() {
     revertColors('.o', '.o-icon', '#3078c0', '#203880');
   });
+
+  $('#filled-location').hover(function() {
+    $('.location-text').css('color', '#fff');
+  },function() {
+    $('.location-text').css('color', 'transparent');
+  });
+
+  $('#filled-coffee').hover(function() {
+    $('.coffee-text').css('color', '#fff');
+  },function() {
+    $('.coffee-text').css('color', 'transparent');
+  });
+
+  $('#filled-browser').hover(function() {
+    $('.browser-text').css('color', '#fff');
+  },function() {
+    $('.browser-text').css('color', 'transparent');
+  });
+
+  $('#filled-email').hover(function() {
+    $('.email-text').css('color', '#fff');
+  },function() {
+    $('.email-text').css('color', 'transparent');
+  });
+
+  $('#filled-suitcase').hover(function() {
+    $('.suitcase-text').css('color', '#fff');
+  },function() {
+    $('.suitcase-text').css('color', 'transparent');
+  });
+
+  $('#filled-phone').hover(function() {
+    $('.phone-text').css('color', '#fff');
+  },function() {
+    $('.phone-text').css('color', 'transparent');
+  });
+
+  $('#filled-paper').hover(function() {
+    $('.paper-text').css('color', '#fff');
+  },function() {
+    $('.paper-text').css('color', 'transparent');
+  });
+
 });
